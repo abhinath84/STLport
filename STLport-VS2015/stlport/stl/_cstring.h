@@ -20,7 +20,7 @@
 #  if defined (_STLP_HAS_INCLUDE_NEXT)
 #    include_next <cstring>
 #  else
-#    include _STLP_NATIVE_CPP_C_HEADER(cstring)
+#    include _STLP_NATIVE_CPP_C_VC_HEADER(cstring)
 #  endif
 #else
 #  include <string.h>

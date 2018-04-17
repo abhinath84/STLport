@@ -27,7 +27,7 @@
 #  if defined (_STLP_HAS_INCLUDE_NEXT)
 #    include_next <climits>
 #  else
-#    include _STLP_NATIVE_CPP_C_HEADER(climits)
+#    include _STLP_NATIVE_CPP_C_VC_HEADER(climits)
 #  endif
 #else
 #  if defined (__BORLANDC__)

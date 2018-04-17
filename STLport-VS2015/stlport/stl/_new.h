@@ -44,7 +44,7 @@ using _STLP_VENDOR_CSTD::malloc;
 #  if defined (_STLP_HAS_INCLUDE_NEXT)
 #    include_next <new>
 #  else
-#    include _STLP_NATIVE_CPP_RUNTIME_HEADER(new)
+#    include _STLP_NATIVE_CPP_VC_RUNTIME_HEADER(new)
 #  endif
 #else
 #  include <new.h>

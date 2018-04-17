@@ -36,7 +36,8 @@ struct _exception;
 #  if defined (_STLP_HAS_INCLUDE_NEXT)
 #    include_next <ctype.h>
 #  else
-#    include _STLP_NATIVE_C_HEADER(ctype.h)
+//#    include _STLP_NATIVE_C_HEADER(ctype.h)
+#    include "C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\ctype.h"
 #  endif
 
 /* on evc4 including ctype.h also defines setjmp macro */

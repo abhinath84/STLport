@@ -46,7 +46,7 @@
 // Workaround to DMC harcoded typeinfo.h inclusion.
 #      include <../include/exception>
 #    else
-#      include _STLP_NATIVE_CPP_RUNTIME_HEADER(exception)
+#      include _STLP_NATIVE_CPP_VC_RUNTIME_HEADER(exception)
 #    endif
 #  endif
 #endif

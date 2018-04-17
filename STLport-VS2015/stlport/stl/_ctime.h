@@ -22,7 +22,7 @@
 #    if defined (_STLP_HAS_INCLUDE_NEXT)
 #      include_next <ctime>
 #    else
-#      include _STLP_NATIVE_CPP_C_HEADER(ctime)
+#      include _STLP_NATIVE_CPP_C_VC_HEADER(ctime)
 #    endif
 #  else
 #    include <time.h>
