@@ -18,19 +18,9 @@
 #  define _STLP_MAKE_HEADER(path, header) <path/header>
 #endif
 
-
 #if !defined (_STLP_NATIVE_HEADER)
 #  if !defined (_STLP_NATIVE_INCLUDE_PATH)
-#  	if ( _MSC_VER >= 1900 )
-#		define _STLP_NATIVE_INCLUDE_PATH   ..\..\..\Windows Kits\10\Include\10.0.10150.0\ucrt
-
-#		define _STLP_NATIVE_VC_HEADER(header)     			<../include/##header>
-#  		define _STLP_NATIVE_CPP_C_VC_HEADER(header)			<../include/##header>
-#  		define _STLP_NATIVE_C_VC_HEADER(header)     		<../include/##header>
-#  		define _STLP_NATIVE_CPP_VC_RUNTIME_HEADER(header)	<../include/##header>
-#	else
-#    	define _STLP_NATIVE_INCLUDE_PATH ../include
-#	endif
+#    define _STLP_NATIVE_INCLUDE_PATH ../include
 #  endif
 #  define _STLP_NATIVE_HEADER(header) _STLP_MAKE_HEADER(_STLP_NATIVE_INCLUDE_PATH,header)
 #endif
@@ -41,7 +31,6 @@
 #    define _STLP_NATIVE_C_INCLUDE_PATH _STLP_NATIVE_INCLUDE_PATH
 #  endif
 #  define _STLP_NATIVE_C_HEADER(header)  _STLP_MAKE_HEADER(_STLP_NATIVE_C_INCLUDE_PATH,header)
-#  define _STLP_NATIVE_C_VC_HEADER(header)     <../include/##header>
 #endif
 
 /* For some compilers, C-library headers like <cstdio> are located in separate directory */

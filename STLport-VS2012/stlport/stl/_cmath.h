@@ -24,7 +24,7 @@
 #  if defined (_STLP_HAS_INCLUDE_NEXT)
 #    include_next <cstdlib>
 #  else
-#    include _STLP_NATIVE_CPP_C_VC_HEADER(cstdlib)
+#    include _STLP_NATIVE_CPP_C_HEADER(cstdlib)
 #  endif
 #endif
 
@@ -35,7 +35,7 @@
 #  if defined (_STLP_HAS_INCLUDE_NEXT)
 #    include_next <cmath>
 #  else
-#    include _STLP_NATIVE_CPP_C_VC_HEADER(cmath)
+#    include _STLP_NATIVE_CPP_C_HEADER(cmath)
 #  endif
 #  if defined (_STLP_HAS_NO_NAMESPACES)
 #    undef exception
@@ -494,12 +494,8 @@ inline long double pow(long double __x, int __y) { return (_Pow_int(__x, __y)); 
 #    pragma warning (push)
 #    pragma warning (disable : 4996) // hypot is deprecated.
 #  endif
-
-#if _MSC_VER < 1900
 _STLP_MATH_INLINE2XX(float, hypot, hypot)
 inline long double hypot(long double x, long double y) { return sqrt(x * x + y * y); }
-#endif
-
 #  if defined (_STLP_MSVC) && (_STLP_MSVC >= 1400)
 #    pragma warning (pop)
 #  endif

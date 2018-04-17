@@ -113,34 +113,12 @@
 
 // fixes to native inclusion wrappers.
 # if __MWERKS__ >= 0x2300  // CWPro5 changes paths - dwa 2/28/99
-
-# 	if ( _MSC_VER >= 1900 )
-
-#       define MS_UNIVERSALCRT_INCLUDE   ..\..\..\Windows Kits\10\Include\10.0.10150.0\ucrt
-
-#  		define _STLP_NATIVE_INCLUDE_PATH  MS_UNIVERSALCRT_INCLUDE
-#  		define _STLP_NATIVE_C_INCLUDE_PATH  MS_UNIVERSALCRT_INCLUDE
-#  		define _STLP_NATIVE_HEADER(header)     <MS_UNIVERSALCRT_INCLUDE/##header>
-#  		define _STLP_NATIVE_CPP_C_HEADER(header)     <MS_UNIVERSALCRT_INCLUDE/##header>
-#  		define _STLP_NATIVE_C_HEADER(header)     <MS_UNIVERSALCRT_INCLUDE/##header>
-#  		define _STLP_NATIVE_CPP_RUNTIME_HEADER(header) <MS_UNIVERSALCRT_INCLUDE/##header>
-
-#  		define _STLP_NATIVE_VC_HEADER(header)     			<../include/##header>
-#  		define _STLP_NATIVE_CPP_C_VC_HEADER(header)			<../include/##header>
-#  		define _STLP_NATIVE_C_VC_HEADER(header)     		<../include/##header>
-#  		define _STLP_NATIVE_CPP_VC_RUNTIME_HEADER(header)	<../include/##header>
-
-# 	else
-	
-#  		define _STLP_NATIVE_INCLUDE_PATH  ../include
-#  		define _STLP_NATIVE_C_INCLUDE_PATH  ../includes
-#  		define _STLP_NATIVE_HEADER(header)     <../include/##header>
-#  		define _STLP_NATIVE_CPP_C_HEADER(header)     <../include/##header>
-#  		define _STLP_NATIVE_C_HEADER(header)     <../include/##header>
-#  		define _STLP_NATIVE_CPP_RUNTIME_HEADER(header) <../include/##header>
-
-# 	endif
-
+#  define _STLP_NATIVE_INCLUDE_PATH  ../include
+#  define _STLP_NATIVE_C_INCLUDE_PATH  ../include
+#  define _STLP_NATIVE_HEADER(header)     <../include/##header>
+#  define _STLP_NATIVE_CPP_C_HEADER(header)     <../include/##header>
+#  define _STLP_NATIVE_C_HEADER(header)     <../include/##header>
+#  define _STLP_NATIVE_CPP_RUNTIME_HEADER(header) <../include/##header>
 # else
 
 #  define _STLP_NATIVE_INCLUDE_PATH  Macintosh HD:Codewarrior Pro 4:Metrowerks CodeWarrior:Metrowerks Standard Library:MSL C++:Include
