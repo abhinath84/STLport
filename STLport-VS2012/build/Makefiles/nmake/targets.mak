@@ -204,10 +204,6 @@ RES_MARKED=$(RES_MARKED:@=obj\vc9\@)
 OBJ_MARKED=$(OBJ_MARKED:@=obj\vc11\@)
 RES_MARKED=$(RES_MARKED:@=obj\vc11\@)
 
-!elseif "$(COMPILER_NAME)" == "vc14"
-OBJ_MARKED=$(OBJ_MARKED:@=obj\vc14\@)
-RES_MARKED=$(RES_MARKED:@=obj\vc14\@)
-
 !if "$(TARGET_OS)" == "x64"
 OBJ_MARKED=$(OBJ_MARKED:@=x64\@)
 RES_MARKED=$(RES_MARKED:@=x64\@)
